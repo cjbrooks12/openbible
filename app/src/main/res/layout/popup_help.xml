@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/content_area"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:textSize="28sp"
+            android:text="Help"/>
+        <ScrollView
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="This app is an unofficial client of the topical Bible search from OpenBible.info created by Casey Brooks. It started as part of the app Scripture Now, but has been released as its own standalone application."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="To use, simply enter a word or phrase and hit the search icon. The app will download the results from OpenBible.info and display them in the list below. The downloads suggestions in the background and displays them as you type."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="This Bible is a mashup of the Yahoo! and ESV Bible web services. It searches the Internet for the topics that interest people, many of which you’d never find in a traditional topical Bible. Then it shows relevant verses.\nVote for or suggest verses that you think are especially relevant for a topic. Help improve it.\nSearching for a word will automatically add it.\nPlease note that I didn’t come up with the list of topics or suggest the verses; people’s actual behavior has shaped them. I moderate some of the more offensive topics, however.\nThe topical data is available for download (updated weekly).\nA Note of Caution\nAlways check the context of a verse; that’s why the links are there. The context of a verse might put a very different slant on what the verse seems to say. The Bible isn’t a Magic 8-Ball or a fortune cookie, so don’t treat it like one, OK?" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Unless otherwise indicated, all content is licensed under a Creative Commons Attribution License. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright ©2001 by Crossway Bibles, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com. (for support with the OpenBible Topical Search webpage) or scripture.memory.app@gmail.com (for support with this unofficial Android app)." />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

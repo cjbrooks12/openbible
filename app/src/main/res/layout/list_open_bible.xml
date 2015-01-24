@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_open_bible_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    <android.support.v7.widget.CardView
+        xmlns:cardView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardView:cardBackgroundColor="?attr/color_card"
+        cardView:cardCornerRadius="4dp"
+        cardView:cardMaxElevation="4dp"
+        cardView:cardElevation="2dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp" >
+
+            <RelativeLayout
+                android:id="@+id/icon_layout"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="4dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/icon_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/circle"/>
+
+                <TextView
+                    android:id="@+id/icon_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="1Jn"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="28sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/metadata_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@+id/icon_layout"
+                android:layout_toEndOf="@+id/icon_layout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/item_reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/overflow"
+                    android:layout_toStartOf="@+id/overflow"
+                    android:fontFamily="sans-serif-light"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/item_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/overflow"
+                    android:layout_toStartOf="@+id/overflow"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item_upcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/overflow"
+                    android:layout_toStartOf="@+id/overflow"
+                    android:layout_below="@+id/item_version"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/overflow"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/bg_transparent"
+                    android:src="?attr/ic_action_overflow" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_verse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_below="@+id/metadata_layout"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

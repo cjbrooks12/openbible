@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discoverVerseLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/open_bible_green">
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="24sp"
+        android:textColor="@color/text_dark"
+        android:text="What does the Bible say about..."/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discoverEditText"
+        android:layout_below="@+id/a"
+        android:layout_toLeftOf="@+id/searchButton"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_dark"
+        style="@style/Base.Widget.AppCompat.EditText"
+        android:hint="Search OpenBible.info"
+        android:textColorHint="@color/text_dark"
+        android:completionThreshold="3"
+        android:inputType="textCapWords"
+        android:imeOptions="actionSearch" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/bg_transparent"
+        android:src="@drawable/ic_action_search_light"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/discoverEditText"/>
+</RelativeLayout>

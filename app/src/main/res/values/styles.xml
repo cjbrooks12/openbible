@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="forest_green">#508a4c</color>
+    <color name="open_bible_brown">#7E7156</color>
+    <color name="open_bible_green">#C1E68D</color>
+
+    <!-- Background colors -->
+    <color name="background_light">#F0F0F0</color>
+    <color name="card_light">#FFFFFF</color>
+
+    <color name="background_selected_transparent">#20000000</color>
+    <color name="background_selected_dark">#606060</color>
+    <color name="background_selected_light">#c0c0c0</color>
+
+    <!-- Toolbar Colors (Current main colors) -->
+    <color name="primary">#45B29D</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_accent">#D32F2F</color>
+
+    <color name="text_light">#91FFFFFF</color>
+    <color name="text_dark">#91000000</color>
+
+    <!-- - - - - - - - - Theme Header Section - - - - - - - - -->
+    <style name="Theme.BaseLight" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/open_bible_brown</item>
+        <item name="colorAccent">@color/forest_green</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@drawable/toolbar_shadow</item>
+
+        <!-- Colors -->
+        <item name="color_background_selected">@color/background_selected_light</item>
+        <item name="color_background">@color/background_light</item>
+        <item name="color_toolbar">@color/primary</item>
+        <item name="color_card">@color/card_light</item>
+        <item name="color_text">@color/text_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+
+        <item name="theme_name">Light</item>
+
+        <item name="ic_action_overflow">@drawable/ic_action_overflow_light</item>
+        <item name="ic_action_search">@drawable/ic_action_search_light</item>
+        <item name="ic_action_help">@drawable/ic_action_help_light</item>
+
+    </style>
+</resources>
