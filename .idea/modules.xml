@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TopicalBible.iml" filepath="$PROJECT_DIR$/TopicalBible.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openbible.iml" filepath="$PROJECT_DIR$/openbible.iml" />
     </modules>
   </component>
 </project>
